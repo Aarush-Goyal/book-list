@@ -7,7 +7,9 @@ function BookForm() {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (inputTitle !== '' && inputAuthor !== '' ) {
-          addBooks(inputTitle,inputAuthor)  
+          addBooks(inputTitle,inputAuthor)
+          setInputTitle('')  
+          setInputAuthor('')  
         }
         
     }
